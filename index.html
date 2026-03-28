@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adyar Cancer Institute - Patient Navigation</title>
+  <meta name="theme-color" content="#1a3a5c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ACI Navigator">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #1a1a2e;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a3a5c, #2d6a9f);
+      color: #fff;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .widget-section {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    #embedded-widget-container {
+      height: 600px;
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      background: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    footer a {
+      color: #2d6a9f;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adyar Cancer Institute</h1>
+    <p>Patient Navigation Assistant</p>
+  </header>
+
+  <section class="widget-section">
+    <div id="embedded-widget-container" style="height: 600px; width: 100%;"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Adyar Cancer Institute (WIA). All rights reserved.</p>
+  </footer>
+
+  <script
+    src="https://cdn.apigateway.co/webchat-client..prod/sdk.js"
+    data-widget-id="ae33fe3e-2955-11f1-9fad-d65baf928bba"
+    data-embed-mode="embedded"
+    data-embed-target="embedded-widget-container"
+    defer
+  ></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
+</body>
+</html>

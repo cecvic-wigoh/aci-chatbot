@@ -1,0 +1,22 @@
+{
+  "name": "Adyar Cancer Institute - Patient Navigation",
+  "short_name": "ACI Navigator",
+  "description": "Patient navigation assistant for Adyar Cancer Institute",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f4f8",
+  "theme_color": "#1a3a5c",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
