@@ -1,7 +1,7 @@
 {
-  "name": "Adyar Cancer Institute - Patient Navigation",
+  "name": "Cancer Institute (WIA) - Patient Navigation",
   "short_name": "ACI Navigator",
-  "description": "Patient navigation assistant for Adyar Cancer Institute",
+  "description": "Patient navigation assistant for Cancer Institute (WIA)",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f0f4f8",
